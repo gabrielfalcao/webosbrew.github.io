@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main"]
 
+  schedule:
+    # Every 3 days at 06:34 UTC
+    - cron: "34 6 */3 * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
